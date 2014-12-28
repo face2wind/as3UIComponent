@@ -170,6 +170,10 @@ package face2wind.uiComponents
 		 */
 		public function get text():String
 		{
+			if(null == textfield)
+				return "";
+			if(_text != textfield.text)
+				_text = textfield.text;
 			return _text;
 		}
 		/**
